@@ -108,7 +108,7 @@
       <div class="row justify-content-center mb-5 pb-2">
         <div class="col-md-7 text-center heading-section ftco-animate">
           <span class="subheading">OnRush Delivery</span>
-          <h2 class="mb-4" style="color:white">Order History</h2>
+          <h2 class="mb-4" style="color:white">New Orders</h2>
         </div>
       </div>
 
@@ -135,7 +135,16 @@
               <td>Jijo</td>
               <td>10/05/2021</td>
               <td>40</td>
-              <td>Delivered</td>
+              <td class="">
+                <div class="btn-group text-right">
+                  <button type="button" class="btn btn-light br2 btn-xs fs10 dropdown-toggle" data-toggle="dropdown"
+                    aria-expanded="false"> Accept/Reject<span class="caret ml5"></span></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li class="active"><a href="#">Accept</a></li>
+                    <li><a href="#">Reject</a></li>
+                  </ul>
+                </div>
+              </td>
             </tr>
 
           </tbody>
@@ -156,12 +165,10 @@
         stroke="#25B246" />
     </svg></div>
 
-    <script> document.getElementById("name").style.fontFamily = "Less , Helvetica, sans-serif"; </script>
-    <script>document.getElementById("name").style.fontSize = "60px";</script>
-    <script> document.getElementById("nam").style.fontFamily = "Less Light , Helvetica, sans-serif"; </script>
-    <script>document.getElementById("nam").style.fontSize = "60px";</script>
-    <script> document.getElementById("title").style.fontFamily = "Less Light, Helvetica, sans-serif"; </script>
-    <script>document.getElementById("title").style.fontSize = "50px";</script>
+  <script>document.getElementById("name").style.fontFamily = "Poppins Black, sans-serif";</script>
+  <script>document.getElementById("name").style.fontSize = "40px";</script>
+  <script>document.getElementById("ame").style.fontFamily = "Poppins Black, sans-serif";</script>
+  <script>document.getElementById("ame").style.fontSize = "40px";</script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
