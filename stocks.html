@@ -111,17 +111,22 @@
       <div class="col-md-12 col-sm-12 text-center ftco-animate" style="color:white;text-align:center;">
         <h1 id="name" class="mb-4 mt-5"style="color:white;">Welcome Admin</h1>-->
       <br><br><br><br>
-      
+
 
       <div class="container-fluid p-5">
-        
+
         <div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-7 text-center heading-section ftco-animate">
             <span class="subheading">OnRush Delivery</span>
             <h2 class="mb-4" style="color:white">Update Stocks Details</h2>
           </div>
         </div>
-  <br>
+        <center>
+          <form action="additem.html">
+            <input type="submit" class="btn btn-primary" value="Add Item" />
+          </form>
+        </center>
+        <br><br><br>
 
         <div class="row">
           <table class="table table-hover">
@@ -131,7 +136,7 @@
                 <th>Old Amount</th>
                 <th>New Amount</th>
                 <th>Availability</th>
-                <th>Special</th>
+                <th>Quantity</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
@@ -165,11 +170,11 @@
                     &#8377; 30
 
                   </td>
+                  
 
 
                   <td style="text-align:center">
                     <div class="form-group">
-
                       <select class="form-control" style="color:black;opacity: 0.7" name="available" required="">
                         <option value="">Choose</option>
                         <option value="Yes">Yes</option>
@@ -181,14 +186,14 @@
 
                   <td style="text-align:center">
                     <div class="form-group">
-                      <select class="form-control" style="color:black;opacity: 0.7" name="special" required="">
-                        <option value="">Choose</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                      </select>
+                      <input type="text" class="form-control" id="pwd" value="30">
+                      <input type="hidden" class="form-control" id="pwd" value="30" name="fid"
+                        style="color:black;opacity: 0.7">
                     </div>
-                    No
+                    &#8377; 30
+
                   </td>
+                 
 
                   <td><button type="submit" name="foodsubmit" class="btn btn-primary">Edit</button></td>
                 </form>
