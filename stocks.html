@@ -63,7 +63,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
         <div class="media">
-          <a class="brand-name" href="www.onrushdelivery.com">
+          <a class="brand-name" href="index.html">
             <img src="images\logo.png" width="50" height="50"> OnRush Delivery
             </a>
         </div>
@@ -128,13 +128,22 @@
             <input type="submit" class="btn btn-primary" value="Add New Products" />
           </form>
         </center>
-        <br><br><br>
+        <br>
+        <form class="example" action="/action_page" style="margin:auto;max-width:300px">
+          <input type="text" placeholder="Search.." name="search2">
+          <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg>
+        </button>
+        </form>
+        <br>
 
         <div class="row">
           <table class="table table-hover">
             <thead class="p-3 mb-2 bg-success text">
               <tr style="text-align:center;font-size:130%;">
-                <th>Prudect Image</th>
+                <th>Product Image</th>
                 <th>Product Name</th>
                 <th>Wholesale Rate</th>
                 <th>Old Amount</th>
@@ -200,7 +209,7 @@
                   <td style="text-align: center; vertical-align: middle;">
                     <div class="form-group">
                       <select class="form-control" style="color:black;opacity: 0.9;" name="available" required="">
-                        <option value="Yes">Stock</option>
+                        <option value="Yes">On Stock</option>
                         <option value="No">Out of Stock</option>
                       </select>
                     </div>
