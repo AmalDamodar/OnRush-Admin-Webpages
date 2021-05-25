@@ -125,7 +125,7 @@
         </div>
         <center>
           <form action="additem.html">
-            <input type="submit" class="btn btn-primary" value="Add Item" />
+            <input type="submit" class="btn btn-primary" value="Add New Products" />
           </form>
         </center>
         <br><br><br>
@@ -134,9 +134,11 @@
           <table class="table table-hover">
             <thead class="p-3 mb-2 bg-success text">
               <tr style="text-align:center;font-size:130%;">
-                <th>Name</th>
+                <th>Prudect Image</th>
+                <th>Product Name</th>
+                <th>Wholesale Rate</th>
                 <th>Old Amount</th>
-                <th>New Amount</th>
+                <th>MRP</th>
                 <th>Availability</th>
                 <th>Quantity</th>
                 <th>Edit</th>
@@ -146,60 +148,79 @@
             <tbody>
               <tr>
                 <form method="post">
-                  <td style="text-align:center">Palm oil 1KG</td>
 
-
-
-
-                  <td style="text-align:center">
+                  <td style="text-align: center; vertical-align: middle;">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="pwd" value="" name="oldamount"
-                        style="color:black;opacity: 0.7;text-align:center">
+                      <div style="background-image: url('https://static.wikia.nocookie.net/marvelcinematicuniverse/images/3/35/IronMan-EndgameProfile.jpg');
+                      background-size: 200px;  background-repeat: no-repeat; height:auto; width: auto; padding-top:100px; border-radius: 10%;border: 2px solid #25B246">
+                        <!-- <img src=""> -->
+                      </div>
+                    </div>
+                    <button type="" name="" class="btn btn-primary">Change</button>
+                  </td>
+
+
+                  <td style="text-align: center; vertical-align: middle;">
+                    <h3 style="color: white;">Palm oil 1KG</h3>
+                  </td>
+
+
+                  <td style="text-align: center; vertical-align: middle;">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="pwd" value="50" name="rate"
+                        style="color:black;opacity: 0.9;text-align:center">
+                    </div>
+                    <p>&#8377; 50</p>
+                  </td>
+
+
+
+                  <td style="text-align: center; vertical-align: middle;">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="pwd" value="50" name="oldamount"
+                        style="color:black;opacity: 0.9;text-align:center">
                     </div>
                     <p style="text-decoration: line-through">&#8377; 50</p>
                   </td>
 
 
 
-
-
-                  <td style="text-align:center">
+                  <td style="text-align: center; vertical-align: middle;">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="pwd" value="30">
+                      <input type="text" class="form-control" id="pwd" value="30" style="color:black;opacity: 0.9;text-align:center">
                       <input type="hidden" class="form-control" id="pwd" value="30" name="fid"
-                        style="color:black;opacity: 0.7">
+                        style="color:black;opacity: 0.9;text-align:center">
                     </div>
-                    &#8377; 30
+                   <p> &#8377; 30</p>
 
                   </td>
                   
 
 
-                  <td style="text-align:center">
+                  <td style="text-align: center; vertical-align: middle;">
                     <div class="form-group">
-                      <select class="form-control" style="color:black;opacity: 0.7" name="available" required="">
-                        <option value="">Choose</option>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
+                      <select class="form-control" style="color:black;opacity: 0.9;" name="available" required="">
+                        <option value="Yes">Stock</option>
+                        <option value="No">Out of Stock</option>
                       </select>
                     </div>
                     Yes
                   </td>
 
-                  <td style="text-align:center">
+                  <td style="text-align: center; vertical-align: middle;">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="pwd" value="30">
+                      <input type="text" class="form-control" id="pwd" value="30" style="color:black;opacity: 0.9;text-align:center">
                       <input type="hidden" class="form-control" id="pwd" value="30" name="fid"
-                        style="color:black;opacity: 0.7">
+                        style="color:black;opacity: 0.9;text-align:center">
                     </div>
-                    &#8377; 30
+                    <p> &#8377; 30</p>
 
                   </td>
                  
 
-                  <td><button type="submit" name="foodsubmit" class="btn btn-primary">Edit</button></td>
+                  <td style="text-align: center; vertical-align: middle;"><button type="submit" name="submit" class="btn btn-primary">Submit</button></td>
                 </form>
-                <td><a href="disfood.jsp?deid=<%out.println(rs11.getString(" f_id"));%>Delete</td>
+                <td style="text-align: center; vertical-align: middle;"><button type="submit" name="submit" class="btn btn-danger">Delete</button></td>
               </tr>
 
             </tbody>
